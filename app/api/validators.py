@@ -57,8 +57,8 @@ async def check_full_amount_invested_amount(
         charity_project_id, session
     )
     if (
-        obj_in.full_amount is not None
-        and obj_in.full_amount < charity_project.invested_amount
+        obj_in.full_amount is not None and
+        obj_in.full_amount < charity_project.invested_amount
     ):
         raise HTTPException(
             status_code=HTTPStatus.BAD_REQUEST,
