@@ -9,3 +9,16 @@ PROJECT_HAS_FUNDS = 'Нельзя удалить проект, в который
 
 MIN_LENGTH = 1
 MAX_LENGTH = 100
+
+FORMAT = '%Y/%m/%d %H:%M:%S'
+
+SHEETS_SERVICE_NAME = 'sheets'
+SHEETS_SERVICE_VERSION = 'v4'
+SHEET_PROPERTIES = {
+    'sheetType': 'GRID',
+    'sheetId': 0,
+    'title': 'Лист1',
+    'gridProperties': {'rowCount': 100, 'columnCount': 11},
+}
+DRIVE_SERVICE_NAME = 'drive'
+DRIVE_SERVICE_VERSION = 'v3'
